@@ -61,6 +61,32 @@
   .accordion-body .col strong {
     color: #343a40;
   }
+
+
+  .accordion-body .bg-light:hover {
+    background-color: #e3f2fd;
+    transition: background-color 0.3s ease;
+  }
+ .accordion-body .bg-light:hover {
+    background-color: #f1f8e9;
+    transition: background-color 0.3s ease-in-out;
+  }
+.accordion-body .bg-light:hover {
+    background-color: #fffde7;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+ .gallery-photo {
+    border: 3px solid #eceff1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: #90a4ae;
+  }
+
   </style>
 </head>
 <body>
@@ -77,208 +103,172 @@
       </div> -->
 <!--     </div>
  -->
-    <div class="accordion mt-4" id="profileAccordion">
-           
+<div class="accordion mt-4" id="profileAccordion">
 
-           <!-- Şəxsi Məlumatlar -->
+  <!-- Şəxsi Məlumatlar -->
 <div class="accordion-item">
   <h2 class="accordion-header" id="headingPersonal">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#personalInfo" aria-expanded="false" aria-controls="personalInfo">
-      Şəxsi Məlumatlar
+      🧍 Şəxsi Məlumatlar
     </button>
   </h2>
   <div id="personalInfo" class="accordion-collapse collapse" aria-labelledby="headingPersonal" data-bs-parent="#profileAccordion">
     <div class="accordion-body">
       <div class="row row-cols-1 row-cols-sm-2 g-3">
-        <div class="col"><strong>Ad:</strong> İsmət Ağamirzəyev</div>
-        <div class="col"><strong>Doğum ili:</strong> 1995</div>
-        <div class="col"><strong>Yaş:</strong> 29</div>
-        <div class="col"><strong>Boy:</strong> 1.80 m</div>
-        <div class="col"><strong>Doğulduğu yer:</strong> Quba, Azərbaycan</div>
-        <div class="col"><strong>Yaşadığı yer:</strong> Bakı, Azərbaycan</div>
-        <div class="col"><strong>Milliyyət:</strong> Azərbaycanlı</div>
-        <div class="col"><strong>Din:</strong> Müsəlman</div>
+        <div class="col"><strong>👤 Ad:</strong> İsmət Ağamirzəyev</div>
+        <div class="col"><strong>🎂 Doğum tarixi:</strong> 1995.10.10</div>
+        <div class="col"><strong📏> Boy:</strong> 1.80 m</div>
+        <div class="col"><strong>📍 Doğulduğu yer:</strong> Quba, Azərbaycan</div>
+        <div class="col"><strong>🏠 Yaşadığı yer:</strong> Bakı, Azərbaycan</div>
+        <div class="col"><strong>🌍 Milliyyət:</strong> Azərbaycanlı</div>
+        <div class="col"><strong>☪️ Din:</strong> Müsəlman</div>
       </div>
     </div>
   </div>
 </div>
 
 
-            <!-- Təhsil və Peşə -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingEducation">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false" aria-controls="education">
-                        Təhsil və Peşə
-                    </button>
-                </h2>
-                <div id="education" class="accordion-collapse collapse" aria-labelledby="headingEducation" data-bs-parent="#profileAccordion">
-                    <div class="accordion-body">
-                        <p><span class="info-label">Ali təhsil:</span> UNEC - Maliyyə</p>
-                        <p><span class="info-label">İş yeri:</span> Cybrnet - Java developer (Proqramçı)</p>
-                        <p><span class="info-label">Gəlir səviyyəsi:</span> Stabil, orta səviyyə</p>
-                        <p><span class="info-label">Gələcək planları:</span> Şəxsi biznes qurmaq və stabil həyat təmin etmək</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Şəxsi Keyfiyyətlər -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingQualities">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qualities" aria-expanded="false" aria-controls="qualities">
-                        Şəxsi Keyfiyyətlər
-                    </button>
-                </h2>
-                <div id="qualities" class="accordion-collapse collapse" aria-labelledby="headingQualities" data-bs-parent="#profileAccordion">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>Sakit, anlayışlı, ailəyə dəyər verən</li>
-                            <li>Məsuliyyətli, dürüst, səbirli</li>
-                            <li>Həm ənənəvi, həm müasir baxışlara açıq</li>
-                            <li>Dialoqla problemləri həll etməyə çalışan</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Psixoloji Baxış -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingPsychology">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#psychology" aria-expanded="false" aria-controls="psychology">
-                        Psixoloji və Dini baxiş
-                    </button>
-                </h2>
-                <div id="psychology" class="accordion-collapse collapse" aria-labelledby="headingPsychology" data-bs-parent="#profileAccordion">
-                    <div class="accordion-body">
-                        <ul>
-                               <li><strong>İnanc və mənəviyyat</strong>
-            <ul>
-                <li>İnancım, həyat yoluma mənəvi bir istiqamət və dayaq verir</li>
-                <li>Dini dəyərlər mənə həm daxili sabitlik, həm də davranışda istiqamət verir</li>
-            </ul>
-                            <li>Özünü tanımaq və inkişaf etdirmək üçün çalışır</li>
-                            <li>Qarşısındakı insana mənəvi dayaq olmağa və ailədaxili sabitliyi qorumağa çalışır</li>
-                            <li>Azadlığa, hörmətə, dəstəyə önəm verir</li>
-                          
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sosial Həyat -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSocial">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#social" aria-expanded="false" aria-controls="social">
-                        Sosial Həyat
-                    </button>
-                </h2>
-                <div id="social" class="accordion-collapse collapse" aria-labelledby="headingSocial" data-bs-parent="#profileAccordion">
-                    <div class="accordion-body">
-                       <ul>
-                          <li>Az, amma dəyərli insanlarla əlaqədə olmağı seçir</li>
-                          <li>Oxumağı, podkastlara qulaq asmağı və təbiətdə gəzməyi xoşlayır</li>
-                          <li>Din, psixologiya və fəlsəfə mövzularında maraqlı fikirlər üzərində düşünməyi sevir</li>
-                      </ul>
-                    </div>
-                </div>
-            </div>
-         <!-- Ailə Haqqında -->
+  <!-- Təhsil və Peşə -->
 <div class="accordion-item">
-  <h2 class="accordion-header" id="headingFamily">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#family" aria-expanded="false" aria-controls="family">
-      Ailə Haqqında
+  <h2 class="accordion-header" id="headingEducation">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false" aria-controls="education">
+      🎓 Təhsil və Peşə
     </button>
   </h2>
-  <div id="family" class="accordion-collapse collapse" aria-labelledby="headingFamily" data-bs-parent="#profileAccordion">
+  <div id="education" class="accordion-collapse collapse" aria-labelledby="headingEducation" data-bs-parent="#profileAccordion">
     <div class="accordion-body">
-      <ul>
-        <li>Ailəmizdə – atam, anam, iki qardaşım, bir bacım var</li>
-        <li>Atam fermerdir, anam isə ev xanımıdır. Ailəmiz əsasən heyvandarlıqla məşğuldur</li>
-        <li>Böyük qardaşım ailəlidir və iki övladı var, valideynlərlə birlikdə yaşayırlar</li>
-        <li>Bacım da ailəlidir, kiçik qardaşım isə subaydır</li>
-        <li>Gələcəkdə ailə qurduqda ayrıca evdə yaşamağı planlaşdırıram</li>
-        <li>Yalnız bəzi xüsusi hallarda valideynlərlə birgə yaşamaq mümkündür</li>
-      </ul>
+      <div class="row row-cols-1 row-cols-sm-2 g-3">
+        <div class="col"><strong>🏫 Ali təhsil:</strong> UNEC – Maliyyə</div>
+        <div class="col"><strong>💼 İş yeri:</strong> Cybrnet – Java developer (Proqramçı)</div>
+        <div class="col"><strong>💰 Gəlir səviyyəsi:</strong> Stabil, orta səviyyə</div>
+        <div class="col"><strong>🎯 Gələcək planları:</strong> Şəxsi biznes qurmaq və stabil həyat təmin etmək</div>
+      </div>
     </div>
   </div>
 </div>
 
-
-            <!-- Qarşı Tərəfdən Gözləntilər -->
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingExpectations">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#expectations" aria-expanded="false" aria-controls="expectations">
-            Qarşı Tərəfdən Gözləntilər
-        </button>
-    </h2>
-    <div id="expectations" class="accordion-collapse collapse" aria-labelledby="headingExpectations" data-bs-parent="#profileAccordion">
-        <div class="accordion-body">
-            <ul>
-                <li>Açıq, dürüst və qarşılıqlı hörmətə əsaslanan münasibətə önəm verən biri</li>
-                <li>Mənəvi və əxlaqi dəyərlərə həssas yanaşan, dinə və inanca hörmətli münasibət göstərən</li>
-                <li>Həm ailəsinə, həm də öz inkişafına dəyər verən düşüncəyə sahib</li>
-                <li>Özünü tanımağa çalışan və münasibətdə qarşılıqlı şəkildə böyüməyə açıq biri</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Fotoqalereya -->
+  <!-- Psixoloji və Dini baxış -->
   <div class="accordion-item">
-  <h2 class="accordion-header" id="headingPhotos">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#photos" aria-expanded="false" aria-controls="photos">
-      Fotolar
-    </button>
-  </h2>
-  <div id="photos" class="accordion-collapse collapse" aria-labelledby="headingPhotos" data-bs-parent="#profileAccordion">
-    <div class="accordion-body">
-      <div class="row">
-              <div class="col-md-4 mb-3">
-                <a href="https://ismataga.github.io/ismat-aghamirzayev/1.jpg" class="glightbox">
-                  <img src="https://ismataga.github.io/ismat-aghamirzayev/1.jpg" class="img-fluid rounded shadow-sm" alt="Photo 1">
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="https://ismataga.github.io/ismat-aghamirzayev/12.jpg" class="glightbox">
-                  <img src="https://ismataga.github.io/ismat-aghamirzayev/12.jpg" class="img-fluid rounded shadow-sm" alt="Photo 2">
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="https://ismataga.github.io/ismat-aghamirzayev/18.jpg" class="glightbox">
-                  <img src="https://ismataga.github.io/ismat-aghamirzayev/18.jpg" class="img-fluid rounded shadow-sm" alt="Photo 3">
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="https://ismataga.github.io/ismat-aghamirzayev/13.jpg" class="glightbox">
-                  <img src="https://ismataga.github.io/ismat-aghamirzayev/13.jpg" class="img-fluid rounded shadow-sm" alt="Photo 4">
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="https://ismataga.github.io/ismat-aghamirzayev/6.jpg" class="glightbox">
-                  <img src="https://ismataga.github.io/ismat-aghamirzayev/6.jpg" class="img-fluid rounded shadow-sm" alt="Photo 5">
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="https://ismataga.github.io/ismat-aghamirzayev/14.jpg" class="glightbox">
-                  <img src="https://ismataga.github.io/ismat-aghamirzayev/14.jpg" class="img-fluid rounded shadow-sm" alt="Photo 6">
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="https://ismataga.github.io/ismat-aghamirzayev/15.jpg" class="glightbox">
-                  <img src="https://ismataga.github.io/ismat-aghamirzayev/15.jpg" class="img-fluid rounded shadow-sm" alt="Photo 7">
-                </a>
-              </div>
-              <div class="col-md-4 mb-3">
-                <a href="https://ismataga.github.io/ismat-aghamirzayev/16.jpg" class="glightbox">
-                  <img src="https://ismataga.github.io/ismat-aghamirzayev/16.jpg" class="img-fluid rounded shadow-sm" alt="Photo 8">
-                </a>
-              </div>
-            </div>
-          </div>
+    <h2 class="accordion-header" id="headingPsychology">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#psychology" aria-expanded="false" aria-controls="psychology">
+        Psixoloji və Dini baxış
+      </button>
+    </h2>
+    <div id="psychology" class="accordion-collapse collapse" aria-labelledby="headingPsychology" data-bs-parent="#profileAccordion">
+      <div class="accordion-body">
+        <div class="row row-cols-1 g-3">
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">🕌 İnancım, həyat yoluma mənəvi istiqamət və dayaq verir</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">🧠 Özünü tanımağa və şəxsiyyətini inkişaf etdirməyə çalışır</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">🤝 Qarşısındakı insana dayaq olmağa və ailədaxili sabitliyi qorumağa çalışır</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">🕊 Azadlığa, qarşılıqlı hörmətə və mənəvi dəstəyə önəm verir</div></div>
         </div>
       </div>
-
     </div>
   </div>
+
+  <!-- Sosial Həyat -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSocial">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#social" aria-expanded="false" aria-controls="social">
+        Sosial Həyat
+      </button>
+    </h2>
+    <div id="social" class="accordion-collapse collapse" aria-labelledby="headingSocial" data-bs-parent="#profileAccordion">
+      <div class="accordion-body">
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">👥 Az, amma dəyərli insanlarla əlaqədə olmağı seçir</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">🎧 Oxumağı, podkastlara qulaq asmağı və təbiətdə gəzməyi xoşlayır</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">📚 Din, psixologiya və fəlsəfə mövzularında maraqlı fikirlər üzərində düşünməyi sevir</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ailə Haqqında -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFamily">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#family" aria-expanded="false" aria-controls="family">
+        Ailə Haqqında
+      </button>
+    </h2>
+    <div id="family" class="accordion-collapse collapse" aria-labelledby="headingFamily" data-bs-parent="#profileAccordion">
+      <div class="accordion-body">
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">👨‍👩‍👧‍👦 Ailəmizdə – atam, anam, iki qardaşım, bir bacım var</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">🚜 Atam fermer, anam isə ev xanımıdır. Ailəmiz heyvandarlıqla məşğuldur</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">👨‍👩‍👧 Böyük qardaşım ailəlidir, iki övladı var və valideynlərlə birlikdə yaşayırlar</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">👧 Bacım ailəlidir, kiçik qardaşım isə hələ subaydır</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">🏡 Gələcəkdə ailə qurduqda ayrıca evdə yaşamağı planlaşdırıram</div></div>
+          <div class="col"><div class="p-3 bg-light border rounded shadow-sm">🔄 Yalnız bəzi xüsusi hallarda valideynlərlə birgə yaşamaq mümkündür</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fotoqalereya -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingPhotos">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#photos" aria-expanded="false" aria-controls="photos">
+        📸 Fotolar
+      </button>
+    </h2>
+    <div id="photos" class="accordion-collapse collapse" aria-labelledby="headingPhotos" data-bs-parent="#profileAccordion">
+      <div class="accordion-body">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="https://ismataga.github.io/ismat-aghamirzayev/1.jpg" class="glightbox">
+              <img src="https://ismataga.github.io/ismat-aghamirzayev/1.jpg" class="img-fluid rounded shadow-sm gallery-photo" alt="Şəkil 1">
+            </a>
+          </div>
+         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <a href="https://ismataga.github.io/ismat-aghamirzayev/12.jpg" class="glightbox">
+    <img src="https://ismataga.github.io/ismat-aghamirzayev/12.jpg" class="img-fluid rounded shadow-sm gallery-photo" alt="Şəkil 2">
+  </a>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <a href="https://ismataga.github.io/ismat-aghamirzayev/18.jpg" class="glightbox">
+    <img src="https://ismataga.github.io/ismat-aghamirzayev/18.jpg" class="img-fluid rounded shadow-sm gallery-photo" alt="Şəkil 3">
+  </a>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <a href="https://ismataga.github.io/ismat-aghamirzayev/13.jpg" class="glightbox">
+    <img src="https://ismataga.github.io/ismat-aghamirzayev/13.jpg" class="img-fluid rounded shadow-sm gallery-photo" alt="Şəkil 4">
+  </a>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <a href="https://ismataga.github.io/ismat-aghamirzayev/6.jpg" class="glightbox">
+    <img src="https://ismataga.github.io/ismat-aghamirzayev/6.jpg" class="img-fluid rounded shadow-sm gallery-photo" alt="Şəkil 5">
+  </a>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <a href="https://ismataga.github.io/ismat-aghamirzayev/14.jpg" class="glightbox">
+    <img src="https://ismataga.github.io/ismat-aghamirzayev/14.jpg" class="img-fluid rounded shadow-sm gallery-photo" alt="Şəkil 6">
+  </a>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <a href="https://ismataga.github.io/ismat-aghamirzayev/15.jpg" class="glightbox">
+    <img src="https://ismataga.github.io/ismat-aghamirzayev/15.jpg" class="img-fluid rounded shadow-sm gallery-photo" alt="Şəkil 7">
+  </a>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <a href="https://ismataga.github.io/ismat-aghamirzayev/16.jpg" class="glightbox">
+    <img src="https://ismataga.github.io/ismat-aghamirzayev/16.jpg" class="img-fluid rounded shadow-sm gallery-photo" alt="Şəkil 8">
+  </a>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
