@@ -51,6 +51,16 @@
     .social-icons a:hover {
       color: #263238;
     }
+ .accordion-body .col {
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #eee;
+  }
+
+  .accordion-body .col strong {
+    color: #343a40;
+  }
   </style>
 </head>
 <body>
@@ -70,26 +80,29 @@
     <div class="accordion mt-4" id="profileAccordion">
            
 
-            <!-- Şəxsi Məlumatlar -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingPersonal">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#personalInfo" aria-expanded="false" aria-controls="personalInfo">
-                        Şəxsi  Məlumatlar
-                    </button>
-                </h2>
-                <div id="personalInfo" class="accordion-collapse collapse" aria-labelledby="headingPersonal" data-bs-parent="#profileAccordion">
-                    <div class="accordion-body">
-                        <p><span class="info-label">Ad:</span> İsmət Ağamirzəyev</p>
-                        <p><span class="info-label">Doğum ili:</span> 1995</p>
-                        <p><span class="info-label">Yaş:</span> 29</p>
-                         <p><span class="info-label">Boy:</span>1.80</p>
-                        <p><span class="info-label">Doğulduğu yer:</span> Quba, Azərbaycan</p>
-                        <p><span class="info-label">Yaşadığı yer:</span> Bakı, Azərbaycan</p>
-                        <p><span class="info-label">Milliyyət:</span> Azərbaycanlı</p>
-                        <p><span class="info-label">Din:</span> Müsəlman</p>
-                    </div>
-                </div>
-            </div>
+           <!-- Şəxsi Məlumatlar -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingPersonal">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#personalInfo" aria-expanded="false" aria-controls="personalInfo">
+      Şəxsi Məlumatlar
+    </button>
+  </h2>
+  <div id="personalInfo" class="accordion-collapse collapse" aria-labelledby="headingPersonal" data-bs-parent="#profileAccordion">
+    <div class="accordion-body">
+      <div class="row row-cols-1 row-cols-sm-2 g-3">
+        <div class="col"><strong>Ad:</strong> İsmət Ağamirzəyev</div>
+        <div class="col"><strong>Doğum ili:</strong> 1995</div>
+        <div class="col"><strong>Yaş:</strong> 29</div>
+        <div class="col"><strong>Boy:</strong> 1.80 m</div>
+        <div class="col"><strong>Doğulduğu yer:</strong> Quba, Azərbaycan</div>
+        <div class="col"><strong>Yaşadığı yer:</strong> Bakı, Azərbaycan</div>
+        <div class="col"><strong>Milliyyət:</strong> Azərbaycanlı</div>
+        <div class="col"><strong>Din:</strong> Müsəlman</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <!-- Təhsil və Peşə -->
             <div class="accordion-item">
