@@ -60,10 +60,29 @@
         <img src="https://ismataga.github.io/ismat-aghamirzayev/15.jpg" alt="Profil Şəkli" class="profile-img" />
       </a>
       <h1 class="mt-2">Şəxsi Profil</h1>
-      <p class="text-center mt-3 mb-4" style="font-size: 20px; font-style: italic; color: #444;">
-  “Sizin üçün özünüzdən həyat yoldaşları yaratdı ki, onların yanında sakitlik tapasınız 
-  və aranızda sevgi və mərhəmət var etdi.” <br> <strong>(Rum, 21)</strong>
+      <p class="quran-ayet text-center mt-3 mb-4">
+  “Sizin üçün onlarla ünsiyyət (sakitlik, hüzur) tapasınız deyə, öz cinsinizdən
+  zövcələr (həyat yoldaşları) yaratması və aranızda sevgi (məhəbbət) və mərhəmət
+  yaratması da, Onun ayələrindəndir.” <br>
+  <strong>(Rum, 21)</strong>
 </p>
+
+<style>
+  .quran-ayet {
+    font-size: 16px;           /* Normal ölçü */
+    line-height: 1.5;
+    color: #444;
+    font-style: italic;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 480px) {
+    .quran-ayet {
+      font-size: 14px;        /* Mobil üçün kiçik və səliqəli */
+    }
+  }
+</style>
+
 
     </div>
 
@@ -122,9 +141,9 @@
   <div id="aboutMe" class="accordion-collapse collapse">
     <div class="accordion-body">
       <div class="p-3 bg-light border rounded shadow-sm mb-2">
-        Mən İsmət Ağamirzəyev, 1995-ci ildə Qubada doğulmuşam, hazırda Bakıda yaşayıram. Boyum 1.80-dir. Xasiyyətcə sakit və düşüncəli biriyəm, qərarları tələsik vermirəm.
-        Öz üzərimdə işləməyi, həm mənəvi, həm də dünyəvi baxımdan balanslı bir həyat qurmağı önəmli sayıram. 
-        İnsanlarla səmimi və mənalı ünsiyyət qurmağı xoşlayıram. Davamlı inkişaf və insanlara faydalı olmaq həyatımın əsas istiqamətlərindəndir.
+        Mən İsmət Ağamirzəyev, 1995-ci ildə Qubada doğulmuşam, hazırda Bakıda yaşayıram. Boyum 1.80 sm-dir. 
+        UNEC-in Maliyyə fakültəsini bitirmişəm. Hazırda "Cybernet" şirkətində Java Backend Developer kimi çalışıram. 
+        Texnologiya ilə yanaşı, startap və biznes sahəsinə də marağım var və bu istiqamətdə öz fəaliyyətlərim üzərində işləyirəm.
       </div>
     </div>
   </div>
@@ -133,20 +152,22 @@
 <div class="accordion-item">
   <h2 class="accordion-header">
     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#hobbies">
-      İş və Təhsil
+      Xarakter və Maraqlar
     </button>
   </h2>
   <div id="hobbies" class="accordion-collapse collapse">
     <div class="accordion-body">
       <div class="p-3 bg-light border rounded shadow-sm mb-2">
-        UNEC-in Maliyyə fakültəsini bitirmişəm. Hazırda Cybrnet-də Java Backend Developer kimi çalışıram. 
-        Texnologiya ilə yanaşı, startup və biznes sahəsinə də marağım var və bu istiqamətdə öz fəaliyyətlərim üzərində işləyirəm.
+        Xasiyyətcə sakit və düşüncəli biriyəm, qərarları tələsik vermirəm. 
+        Öz üzərimdə işləməyi, həm mənəvi, həm də dünyəvi baxımdan balanslı bir həyat qurmağı önəmli sayıram. 
+        İnsanlarla səmimi və mənalı ünsiyyət qurmağı, psixologiya və fəlsəfə mövzularını araşdırmağı, kitab oxumağı xoşlayıram. 
+        Təbiətdə gəzmək mənə həm sakitlik, həm də düşünmək imkanı verir.
       </div>
     </div>
   </div>
 </div>
 <!---------------------- Hobbilər ------------------------>
-<div class="accordion-item">
+<!-- <div class="accordion-item">
   <h2 class="accordion-header">
     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#hobbies">
       Hobbilərim
@@ -161,7 +182,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!---------------------- Evlilik Baxışım ------------------------>
 <div class="accordion-item">
@@ -180,24 +201,6 @@
     </div>
   </div>
 </div>
-
-<!---------------------- Qarşı tərəfdən gözləntilər ------------------------>
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#expectations">
-      Qarşı tərəfdən gözləntilər
-    </button>
-  </h2>
-  <div id="expectations" class="accordion-collapse collapse">
-    <div class="accordion-body">
-      <div class="p-3 bg-light border rounded shadow-sm mb-2">
-        Açıq və dürüst ünsiyyət, qarşılıqlı hörmət və mənəvi dəyərlərə həssas yanaşma. 
-        Həm ailəsinə, həm də öz inkişafına dəyər verən, münasibətdə birlikdə böyüməyə açıq bir insan olmaq
-      </div>
-    </div>
-  </div>
-</div>
-
 <!---------------------- Ailə Haqqında ------------------------>
 <div class="accordion-item">
   <h2 class="accordion-header">
@@ -208,17 +211,33 @@
   <div id="family" class="accordion-collapse collapse">
     <div class="accordion-body">
       <div class="p-3 bg-light border rounded shadow-sm mb-2">
-        Ailəmizdə atam, anam, iki qardaşım və bir bacım var.
-      </div>
-      <div class="p-3 bg-light border rounded shadow-sm mb-2">
-        Atam fermerdir, anam ev xanımıdır və ailəmiz heyvandarlıqla məşğuldur. Böyük qardaşım və bacım ailəlidirlər.
-      </div>
-      <div class="p-3 bg-light border rounded shadow-sm">
+       Əslən Qubalıyıq. Ailəmizdə atam, anam, iki qardaşım və bir bacım var (böyük qardaşım və bacım ailəlidir).
+        Atam fermerdir, anam ev xanımıdır.
         Gələcəkdə ailə qurduqda həyat yoldaşımla ayrıca evdə yaşamağı planlaşdırıram.
       </div>
     </div>
   </div>
 </div>
+<!---------------------- Qarşı tərəfdən gözləntilər ------------------------>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#expectations">
+      Evliliyə baxış və Gözləntilər
+    </button>
+  </h2>
+  <div id="expectations" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <div class="p-3 bg-light border rounded shadow-sm mb-2">
+        Evliliyi ciddi bir addım; qarşılıqlı hörmətə, anlayışa və inanca əsaslanan bir yol yoldaşlığı kimi görürəm. 
+        Hər iki tərəfin bir-birinə həm dayaq, həm də motivasiya olduğu, sevgi və mərhəmət üzərində qurulan bir ailə həyatı arzulayıram. 
+        Qarşı tərəfdən əsas gözləntim: açıq və dürüst ünsiyyət, qarşılıqlı hörmət və mənəvi dəyərlərə həssas yanaşmadır. 
+        Həm ailəsinə, həm də öz inkişafına dəyər verən, münasibətdə birlikdə böyüməyə açıq bir insan olmaq.
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <!---------------------- Fotoqalereya ------------------------>
 <div class="accordion-item">
